@@ -4,17 +4,21 @@
     <title>Google</title>
     <style>
         a {
-            color: #222;
             text-decoration: none;
         }
         a:link {
             text-decoration: none;
+            color: inherit;
         }
         a:hover {
             text-decoration: underline;
         }
         a:visited {
             text-decoration: none;
+            color: inherit;
+        }
+        .header {
+            color: #222 !important;
         }
         body {
             font-size: 14px;
@@ -46,17 +50,23 @@
             flex-direction: column;
         }
         input[type=text] {            
-            background: #fff;
+            background: transparent;
+            color: rgba(0, 0, 0, .87);
             display: flex;
             border: 1px solid #dfe1e5;
             box-shadow: none;
             border-radius: 24px;
-            height: 40px;
-            margin: 0 auto;
-            /*align-self: center; */
+            margin: 0px auto;
             width: 45%;
+            font-size: 16px;
+            height: 36px;
+            padding-left: 35px;
         }
         input[type=text]:hover {
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        }
+        input[type=text]:focus {
+            outline: none;
             box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
         }
         .btns {
@@ -82,8 +92,9 @@
         .search-btn:hover {
             box-shadow: 0 1px 1px rgb( 0 0 0 / 10%);
         }
-        .footer {
-            background-color: lightgray;
+        .footer { 
+            color: #70757a !important;
+            background: #f2f2f2;
             overflow: hidden;
             position: fixed;
             bottom: 0;
@@ -134,31 +145,43 @@
             list-style-type: none;
             margin: 0px 0px 0px 8px;
             padding: 0px;
-            overflow: hidden;         
+            overflow: hidden;  
+            min-width: 800px; 
+    
         }
         #advertising {
             float: left;
-            padding: 10px;
+            padding: 15px;
         }
         #business {
             float: left;
-            padding: 10px;
+            padding: 15px;
+        }
+        #howsearch {
+            float: left;
+            padding: 15px;
         }
         #carbon {
-            float: left;
-            padding: 10px;
+            margin-right: auto;
+            margin-left: 45%;
+            padding-top: 15px;
+           
+        }
+        #leaf {
+            width: 14px;
+            height: 12px;
         }
         #privacy {
             float: right;
-            padding: 10px;
+            padding: 15px;
         }
         #terms {
             float: right;
-            padding: 10px;
+            padding: 15px;
         }
         #settings {
             float: right;
-            padding: 10px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -177,7 +200,7 @@
         </div>
         <img class="logo" alt="Google" height="92" src="http:www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
         <div class="search-bar">
-            <input type="text" name="search" placeholder="">
+            <input type="text" name="search" style="background:url(https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v12/24px.svg) no-repeat 2px"> 
             
         </div>
         <div class="btns">
@@ -186,13 +209,13 @@
         </div>
         <div class="footer">
             <ul class="navfooter">
-                <li id="advertising"><a href="https://about.google">Advertising</a></li>
-                <li id="business"><a href="https://store.google.com/">Business</a></li>
-                <li id="howsearch"><How Search works/li>
-                <li id="carbon">Carbon Neutral since 2007</li>
-                <li id="privacy"><a href="https://www.google.com/imghp?hl=en&ogbl"></a>Privacy</li>
-                <li id="terms"><a href="https://www.google.com/gmail"></a>Terms</li>
-                <li id="settings">Settings</li>
+                <li id="advertising"><a href="https://ads.google.com/">Advertising</a></li>
+                <li id="business"><a href="https://www.google.com/services/">Business</a></li>
+                <li id="howsearch"><a href="https://google.com/search/howsearchworks/">How Search works</a></li>
+                <li id="settings"><a href="https://www.google.com/preferences?hl=en&fg=1">Settings</a></li>
+                <li id="terms"><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+                <li id="privacy"><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                <li id="carbon"><img id="leaf" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"> <a href="https://sustainability.google/">Carbon neutral since 2007</a></li>
             </ul>
         </div>
         

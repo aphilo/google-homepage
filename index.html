@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <style>
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        body {
+            font-size: 14px;
+            font-family: arial,sans-serif;
+            color: #222;
+        }
+        .navheader {
+            list-style-type: none;
+            margin: 4px 0px 0px 8px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .logo {
+            max-height: 100%;
+            max-width: 100%;
+            margin-top: 100px;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
+        }
+        .search-bar {
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+        }
+        input[type=text] {            
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            height: 40px;
+            margin: 0 auto;
+            /*align-self: center; */
+            width: 45%;
+        }
+        input[type=text]:hover {
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        }
+        .btns {
+           display: flex;
+           align-self: center; 
+        }
+        .search-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 10px 12px 0px 0px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .search-btn:hover {
+            box-shadow: 0 1px 1px rgb( 0 0 0 / 10%);
+        }
+        .footer {
+            background-color: lightgray;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+        }
+        #about {
+            float: left;
+            padding: 10px;
+        }
+        #store {
+           float: left;
+           padding: 10px;
+        }
+        #gmail {
+            font-size: 13px;
+            float: right;
+            padding: 10px;
+        }
+        #images {
+            font-size: 13px;
+            float: right;
+            padding: 10px;
+        }
+        #apps {
+            margin-top: 0px;
+            float: right;
+            padding: 6px 5px 10px 10px;
+        }
+        #apps:hover {
+            transform: scale(1.25);
+        }
+        #account-circle {
+            margin-top: -14px;
+            margin-right: 10px;
+            float: right;
+            padding: 10px;
+        }
+        #bulldog {
+            width: 40px;
+            border-radius: 50%;
+        }
+        #bulldog:hover {
+            transform: scale(1.25);
+        }
+        .navfooter {
+            list-style-type: none;
+            margin: 0px 0px 0px 8px;
+            padding: 0px;
+            overflow: hidden;         
+        }
+        #advertising {
+            float: left;
+            padding: 10px;
+        }
+        #business {
+            float: left;
+            padding: 10px;
+        }
+        #carbon {
+            float: left;
+            padding: 10px;
+        }
+        #privacy {
+            float: right;
+            padding: 10px;
+        }
+        #terms {
+            float: right;
+            padding: 10px;
+        }
+        #settings {
+            float: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="navheader">
+                <li id="about"><a href="https://about.google">About</a></li>
+                <li id="store"><a href="https://store.google.com/">Store</a></li>
+                <li id="account-circle"><img id="bulldog" src="http://www.pngall.com/wp-content/uploads/2016/06/Bulldog-PNG-Clipart.png"></li>
+                <li id="apps"><img src="https://fonts.gstatic.com/s/i/materialiconsround/apps/v10/24px.svg"></li>
+                <li id="images"><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
+                <li id="gmail"><a href="https://www.google.com/gmail">Gmail</a></li>
+            </ul>
+        </div>
+        <img class="logo" alt="Google" height="92" src="http:www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <div class="search-bar">
+            <input type="text" name="search" placeholder="">
+            
+        </div>
+        <div class="btns">
+            <button class="search-btn">Google Search</button>
+            <button class="search-btn">I'm Feeling Lucky</button>
+        </div>
+        <div class="footer">
+            <ul class="navfooter">
+                <li id="advertising"><a href="https://about.google">Advertising</a></li>
+                <li id="business"><a href="https://store.google.com/">Business</a></li>
+                <li id="howsearch"><How Search works/li>
+                <li id="carbon">Carbon Neutral since 2007</li>
+                <li id="privacy"><a href="https://www.google.com/imghp?hl=en&ogbl"></a>Privacy</li>
+                <li id="terms"><a href="https://www.google.com/gmail"></a>Terms</li>
+                <li id="settings">Settings</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+
+</body>
